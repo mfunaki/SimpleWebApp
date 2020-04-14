@@ -4,6 +4,7 @@
   "description": "(description)",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "jest --forceExit --coverage --verbose"
   },
   "repository": {
