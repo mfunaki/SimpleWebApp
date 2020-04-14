@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --forceExit --coverage --verbose"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,11 @@
   "devDependencies": {
     "jest": "^25.3.0",
     "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }

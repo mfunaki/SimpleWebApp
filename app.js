@@ -14,4 +14,4 @@ app.get('/next', function(req, res){
     res.end('Thank you.');
 });
 
-app.listen(3000, () => console.log('app listening on port 3000.'));
+module.exports = app.listen(3000);
