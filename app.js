@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
 
+const PORT = process.env.PORT || 3000;
+
 app.set("view engine", "ejs");
 
 app.get('/', function(req, res){
@@ -14,4 +16,5 @@ app.get('/next', function(req, res){
     res.end('Thank you.');
 });
 
-module.exports = app.listen(3000);
+console.log(`Listening on port ${ PORT }.`);
+module.exports = app.listen(PORT);
